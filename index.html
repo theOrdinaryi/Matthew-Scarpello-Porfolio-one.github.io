@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Scarpello | Data Scientist Portfolio</title>
+  <meta name="description" content="Matthew Scarpello's data science portfolio. Explore project questions, methods, highlights, and reflections.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <script src="portfolio-data.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><span class="monogram" aria-hidden="true">MS</span><span data-name>Matthew Scarpello</span></a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><span data-contact class="contact">[Email address]</span></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="intro" id="about" aria-labelledby="intro-title">
+      <div class="intro-main"><p class="eyebrow">Curiosity. Evidence. Understanding.</p><h1 id="intro-title" data-title>Data Scientist Portfolio</h1>
+        <div class="about-row"><img id="profile" class="profile" src="profile-placeholder.svg" alt="Profile photo placeholder" width="108" height="124"><div><h2 class="small-heading">About me</h2><p id="about-copy"></p></div></div>
+        <div class="skills" id="skills" aria-label="Skills"></div>
+      </div>
+      <aside class="workflow" aria-labelledby="workflow-title"><div class="workflow-top"><h2 id="workflow-title">From question to insight</h2><span class="small-label">THE PROCESS</span></div>
+        <div id="workflow-stage" class="workflow-stage" tabindex="0" role="group" aria-label="Analytical process. Use up and down arrow keys or scroll to explore."><span id="workflow-number" class="workflow-number" aria-hidden="true">01</span><div class="workflow-copy" aria-live="polite"><h3 id="workflow-name"></h3><p id="workflow-text"></p></div></div>
+        <div id="workflow-tabs" class="workflow-tabs" aria-label="Analytical process stages"></div>
+      </aside>
+    </section>
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+      <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="projects-heading">Featured projects<span class="accent">.</span></h2></div><p id="projects-intro"></p></div>
+      <div class="project-layout">
+        <aside id="project-selector" class="project-selector" aria-label="Project selector">
+          <div class="selector-label"><span class="small-label">EXPLORE THE COLLECTION</span><span id="project-count">01 / 03</span></div>
+          <button id="project-prev" class="step-button" aria-label="Select previous project"><span aria-hidden="true">↑</span> Previous project</button>
+          <div id="project-options" class="project-options"></div>
+          <button id="project-next" class="step-button" aria-label="Select next project">Next project <span aria-hidden="true">↓</span></button>
+          <p class="scroll-hint">Scroll here to switch projects.<br>Or use the buttons and arrow keys.</p>
+        </aside>
+        <article id="project-view" class="project-view" aria-labelledby="project-title">
+          <div class="project-meta"><span id="project-category" class="eyebrow"></span><span id="project-status" class="status"></span></div>
+          <h3 id="project-title"></h3><div class="project-facts"><span>Completed: <span id="project-date"></span></span><span>Role: <span id="project-role"></span></span></div>
+          <p id="project-summary" class="project-summary"></p><div id="project-tools" class="skills compact"></div>
+          <div class="project-actions"><a id="project-link" class="button primary" href="project-noaa.html">View full project</a></div>
+          <div class="highlights-heading"><h4>Project highlights</h4><span class="small-label">THE DETAILS THAT MATTER</span></div>
+          <ul id="highlight-list" class="highlight-list"></ul>
+          <div class="highlight-view"><figure><img id="highlight-image" src="highlight-question.svg" alt="Highlight placeholder" width="640" height="420"><figcaption id="highlight-caption"></figcaption></figure><div class="highlight-copy"><p id="highlight-number" class="eyebrow"></p><h5 id="highlight-title"></h5><p id="highlight-description"></p></div></div>
+          <div class="highlight-controls"><button id="highlight-prev" class="text-button" aria-label="Previous highlight">Previous</button><div id="highlight-dots" class="dots" aria-label="Choose a highlight"></div><button id="highlight-next" class="text-button" aria-label="Next highlight">Next</button></div>
+        </article>
+      </div>
+      <p id="project-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+    </section>
+    <noscript><p>Please enable JavaScript to use the interactive project viewer. Project pages: <a href="project-noaa.html">NOAA Storm Events</a>, <a href="project-two.html">Project Two</a>, <a href="project-three.html">Project Three</a>.</p></noscript>
+  </main>
+  <footer class="site-footer wrap"><div><span data-name>Matthew Scarpello</span><span class="footer-caption">Data science portfolio</span></div><button class="theme-toggle" type="button" aria-pressed="false">Dark appearance</button><p>Version <span data-version></span><br>Updated <span data-updated></span></p></footer>
+</body>
+</html>
